@@ -1,11 +1,11 @@
 import adafruit_dht
-from board import D4
+import board
 
 
 class GetTemp:
 
     def get(self):
-        dht_device = adafruit_dht.DHT11(D4)
+        dht_device = adafruit_dht.DHT11(board.D4)
         temperature = dht_device.temperature
         humidity = dht_device.humidity
         print(f"{temperature} {humidity}")
