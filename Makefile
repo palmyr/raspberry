@@ -1,2 +1,2 @@
 install:
-	gcc -o dht11 lib/dht11.c -lwiringPi -lwiringPiDev
+	gcc -o dht11 source/dht11.c -lwiringPi -lwiringPiDev
