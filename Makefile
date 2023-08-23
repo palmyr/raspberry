@@ -1,2 +1,2 @@
 install:
-	pip install -r requirements.txt
+	gcc -o dht11 lib/dht11.c -lwiringPi -lwiringPiDev
